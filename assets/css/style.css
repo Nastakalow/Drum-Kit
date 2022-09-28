@@ -1,0 +1,60 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background-image: url("../images/bg_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keys {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.key {
+  width: 6.5rem;
+  border: 3px solid white;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  transition: all 0.07s ease;
+}
+
+kbd {
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+.sound {
+  margin-top: 10px;
+  display: block;
+  color: #ffc600;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
